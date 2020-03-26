@@ -1,0 +1,12 @@
+<%- include ('templates/header'); -%>
+        <div>
+            <img class="flex-item cover" src=" + <%=data["ISBN:"+query].cover["medium"]%> + ">
+            <%=data["ISBN:"+query].title%><br>
+            <%=data["ISBN:"+query].authors["0"].name%><br>
+            <%=data["ISBN:"+query].publish_date%> <br>
+            <%=data["ISBN:"+query].publishers["0"].name%><br>
+            <%=data["ISBN:"+query].publishers["0"].pagination%><br>
+            
+        </div>
+<%- include ('templates/footer'); -%>
+        
